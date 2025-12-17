@@ -1,3 +1,6 @@
 export type Config = {
-    Lifecycles: { [x: string]: string[] }
+    Lifecycles: { [x: string]: {
+        uid: string,
+        path: string,
+    }}
 }
