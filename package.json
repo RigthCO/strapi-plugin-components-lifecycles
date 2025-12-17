@@ -1,5 +1,5 @@
 {
-  "version": "0.0.1",
+  "version": "1.0.0",
   "keywords": ["strapi", "plugin"],
   "type": "commonjs",
   "exports": {
@@ -17,9 +17,8 @@
   ],
   "scripts": {
     "build": "strapi-plugin build",
-    "watch:link": "strapi-plugin watch:link",
-    "verify": "strapi-plugin verify",
-    "test:ts:back": "run -T tsc -p server/tsconfig.json"
+    "watch": "strapi-plugin watch",
+    "watch:link": "strapi-plugin watch:link"
   },
   "dependencies": {},
   "devDependencies": {
