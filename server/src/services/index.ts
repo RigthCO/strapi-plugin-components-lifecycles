@@ -1,5 +1,5 @@
-import service from './service';
+import lifecycles from './lifecycles'
 
 export default {
-  service,
-};
+    lifecycles
+}

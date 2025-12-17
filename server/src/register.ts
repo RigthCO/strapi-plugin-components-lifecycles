@@ -1,7 +1,6 @@
-import type { Core } from '@strapi/strapi';
+import type { Core } from '@strapi/strapi'
+import { PLUGIN } from "../utilities/const"
 
-const register = ({ strapi }: { strapi: Core.Strapi }) => {
-  // register phase
-};
-
-export default register;
+export default async ({ strapi }: { strapi: Core.Strapi }) => {
+    await strapi.service(`${PLUGIN}.lifecycles`).search()
+}
